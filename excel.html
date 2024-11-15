@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel-Coffee Shop Analysis</title>
+    <link rel="stylesheet" href="excel.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>DEYOKA COFFEE SHOP ANALYSIS</li>
+            <li>ADVANCED EXCEL</li>
+            <img src="images/excellogo.png" alt="excel logo">
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Coffee Shop Sales Performance and Strategic Insights Dashboard Report</h1>
+        <div class="pictag">
+            <img src="images/Kay1.jpg" alt="author">
+            <p>Kayode E. Folorunsho</p>
+        </div>
+
+        <div class="sectionimg">
+            <img src="images/coffee.png" alt="coffee shop">
+        </div>
+
+        <div class="writeupcontainer">
+            <h2>Overview</h2>
+            <p>This report provides an in-depth analysis of the Deyoka Coffee Shop's sales data, visualized through a comprehensive dashboard built using Excel and Power BI tools. The dashboard serves as a central hub for monitoring key performance indicators (KPIs) related to sales, product demand, customer preferences, and location-based performance. By evaluating trends and identifying high-impact insights, this report aims to support data-driven decision-making to enhance operational efficiency and customer satisfaction at Deyoka Coffee Shop.</p>
+            <img src="images/coffee1.JPG" alt="data visual">
+            <h2>About the Dataset</h2>
+            <p>The dataset used for this analysis was sourced from Kaggle, containing records on sales transactions, product types, store locations, and customer purchase behaviors over a six-month period. The dataset includes attributes such as transaction date, product categories, store locations, sales volume, and transaction counts. This rich dataset provided the basis for an in-depth exploration of Deyoka Coffee Shop’s sales performance across multiple dimensions.</p>
+            <h2>Data Quality Assessment</h2>
+            <p>Data quality is essential to ensure accurate and reliable analysis. The dataset was assessed and cleaned through several steps in Power Query, which helped to address data integrity issues. Here is a summary of the data quality processes applied:</p>
+            <ul>
+                <li><strong>Duplicates Removal: </strong>Any duplicate rows were removed to avoid skewed transaction counts or duplicated revenue data.</li>
+                <li><strong>Missing Values Handling: </strong>Missing or incomplete values in product names or categories were filled based on contextual data when possible. For sales data, any missing entries were replaced with estimates where appropriate.</li>
+                <li><strong>Data Type Standardization: </strong>Numeric fields, such as sales and quantity, were formatted consistently, and date fields were standardized to facilitate time-series analysis.</li>
+                <li><strong>Outliers Identification: </strong>High and low outliers in sales volume were reviewed to ensure they represented legitimate transactions and were not the result of data entry errors.</li>
+                <li><strong>Consistency Checks: </strong>Product and location names were standardized, addressing any variations in naming conventions across records.</li>
+            </ul>
+            <p>Through these steps, the dataset was transformed into a reliable, high-quality foundation for meaningful analysis.</p>
+            <img src="images/pq.JPG" alt="data cleaning">
+            <h2>Dashboard Overview</h2>
+            <p>The Deyoka Coffee Shop sales dashboard was designed to present key insights visually, offering a user-friendly experience for stakeholders. Key components include:</p>
+            <ul>
+                <li><strong>KPI Indicators: </strong>Display total sales, the number of products, and achievement toward sales targets, offering a quick summary of business performance.</li>
+                <li><strong>Sales and Product Analysis: </strong>Includes detailed views of product sales rankings, average transaction value, and product category breakdown.</li>
+                <li><strong>Location-Based Performance: </strong>Visualizes sales volume and transaction counts by location, helping to compare performance across Deyoka's different stores.</li>
+                <li><strong>Time-Based Sales Trends: </strong>Shows sales trends by day, week, and month, highlighting peak sales periods and patterns in customer behavior.</li>
+                <li><strong>Customer Purchase Patterns: </strong>Analyzes customer purchases by time of day, allowing a deeper understanding of high-traffic hours.</li>
+            </ul>
+            <p>The dashboard allows for flexible filtering by month, location, and day type (weekday vs. weekend), providing granular insights that can support targeted decision-making.</p>
+            <img src="images/schema.JPG" alt="schema">
+            <h2>6. Analysis and Visualization</h2>
+            <p>The Deyoka Coffee Shop sales dashboard was designed to provide a holistic view of performance metrics across various aspects of the business, including products, locations, sales trends, and customer purchasing behaviors. Each visual element was created to make data interpretation straightforward, empowering stakeholders to make informed decisions.</p>
+            <img src="images/coffee1.JPG" alt="">
+            <ul id="hjjkj">
+                <li><strong>Sales Volume by Target: </strong>This gauge visualization illustrates the percentage of the sales target achieved over the analysis period, with a current target achievement rate of <strong>69.85%</strong>. The visual highlights whether the shop is on track to meet its set sales goals. While substantial progress has been made, further efforts may be required to close the gap and reach 100% of the target.</li>
+                <img src="images/sales2.JPG" class="quantityrating" alt="">
+                <br>
+                <li><strong>Top Products by Sales: </strong>This bar chart ranks products by sales revenue, with <strong>Barista Espresso</strong> leading at <strong>$91,345</strong>, followed by <strong>Brewed Chai Tea ($75,714)</strong> and <strong>Hot Chocolate ($74,441)</strong>. This ranking helps to quickly identify the best-performing products, allowing for strategic inventory planning and promotion focus. The data also reveals a marked preference for espresso-based and specialty beverages, suggesting potential growth in these categories.</li>
+                <img src="images/productbysales.JPG" class="quantityrating" alt="">
+                <br>
+                <li><strong>Sales Volume by Store Locations: </strong>This visual compares total sales across the three store locations: <strong>Hell's Kitchen, Astoria, </strong>and <strong>Lower Manhattan</strong>. Hell's Kitchen generated the highest revenue, with <strong>$236,336</strong>, followed closely by Lower Manhattan at <strong>$230,574</strong> and Astoria at <strong>$231,586</strong>. The balance in sales suggests consistent demand across locations, though targeted efforts at individual stores may further maximize sales.</li>
+                <br>
+                <li><strong>Sales Trend by Months: </strong>A line graph tracks the weekly sales trend over six months, from January to June. The visualization indicates fluctuations in demand, with noticeable peaks in certain weeks and dips in others. Weekend sales appear to be generally higher than weekday sales, possibly reflecting customer habits of weekend shopping or leisure-driven visits. This trend provides insights into resource planning, indicating when additional staff or inventory might be needed to meet higher demand.</li>
+                <img src="images/salestrend.JPG" class="quantityrating" alt="">
+                <br>
+                <li><strong>Customer Purchasing Patterns by Period: </strong>This section offers a breakdown of customer purchasing behavior by time of day, split into <strong>morning (9%), afternoon (56%), and evening (35%)</strong>. Afternoon hours show the highest sales volume, which suggests that customers may prefer Deyoka Coffee Shop as an afternoon spot for relaxation or meetings. Such insights can guide marketing promotions, encouraging morning visits through breakfast specials or loyalty discounts to balance out demand across the day.</li>
+                <img src="images/customerpurchasing.JPG" class="quantityrating" alt="">
+                <br>
+                <li><strong>Product Category by Sales and Number of Transactions: </strong>This clustered bar chart compares each product category by total sales and number of transactions, giving insight into both revenue generation and customer transaction frequency. <strong>Coffee</strong> and <strong>Tea</strong> categories contribute the most to total sales, while items like <strong>Drinking Chocolate</strong> and <strong>Loose Tea</strong> see moderate transaction volumes. Understanding the product category performance helps in adjusting the product mix and focusing on items with high margins or popularity.</li>
+
+            </ul>
+
+            <br>
+            <img src="images/coffee2.JPG" alt="coffee shop two">
+            <ul id="hjjkj">
+                <li><strong>Quantity Rating by Transactions</strong> reveals that most sales are in the high-quantity category, with 14 transactions, followed by moderate-quantity at 7 transactions, and low-quantity at 3 transactions. This distribution suggests a trend toward bulk purchasing or popular items driving higher transaction volumes.</li>
+                <img src="images/quantityrating.JPG" class="quantityrating" alt="">
+                <br>
+                <li>Analyzing <strong>Store Locations by Transactions</strong> shows an even distribution across three locations. <strong>Lower Manhattan</strong> leads marginally with <strong>34.02%</strong> of transactions, followed closely by <strong>Hell's Kitchen</strong> at <strong>33.93%</strong>, and <strong>Astoria</strong> at <strong>32.04%</strong>. This near-equal split indicates that all locations contribute significantly to overall sales, with Lower Manhattan slightly outperforming.</li>
+                <img src="images/storelocation.JPG" class="quantityrating" alt="">
+                <br>
+                <li><strong>Transaction Records by Sales</strong> across months show a clear upward trend. January started with $81,587 in sales, slightly declining in February to $76,152. Sales began climbing in March to $98,770, followed by significant increases in April at $118,868 and May at $156,680. June capped off the trend with the highest sales at $166,439. This monthly progression suggests growing demand or effective sales strategies driving consistent growth through the first half of the year.</li>
+                <img src="images/sales.JPG" class="quantityrating" alt="">
+                <br>
+                <li>The <strong>Product Category by Sales Rating</strong> identifies Tea as the dominant category, accounting for 38% of total sales, indicating strong consumer preference. Packaged Chocolate follows with 27%, while Loose Tea and Flavours contribute 12% and 11% respectively. Lower percentages are seen in Drinking Chocolate, Coffee Beans, and Branded Coffee, each at 6% or less. This distribution suggests prioritizing high-performing categories while assessing the potential of lower-contribution items.</li>
+                <img src="images/product.JPG" class="quantityrating" alt="">
+                <br>
+                <li>In terms of <strong>Product Type by Sales</strong>, Barista Espresso tops the list with $91.35K in sales, followed by Brewed Chai Tea at $75.71K and Hot Chocolate at $74.44K. Mid-range sellers, like Brewed Black Tea, BH Tea, and Premium Brewed Coffee, each generate over $35K in sales. On the lower end, items such as Green Beans, Herbal Tea, and Organic Chocolate have sales below $5K, indicating lower demand or limited promotion.</li>
+                <br>
+                <li>The <strong>Average Rating</strong> of 11.11% across all transactions suggests potential for improvement in customer satisfaction, especially if this rating is based on a broader scale. Overall, the dashboard provides a clear view of key performance metrics, showing growth trends, high-demand products, and consistent contributions across store locations, while identifying areas for potential improvement in customer engagement and product focus.</li>
+            </ul>
+        </div>
+        <br>
+        <div class="insight_tag">
+            <h1>7. Insights and Recommendations</h1>
+            <p>Based on the visual analysis of the data, several actionable insights and recommendations emerge:</p>
+            <ul>
+                <h3>High-Performing Products:</h3>
+                <li><strong>Insight: Barista Espresso, Brewed Chai Tea, and Hot Chocolate</strong> are the top sellers, making up a significant portion of total sales.</li>
+                <li><strong>Recommendation: </strong>Consider expanding the variety of these top-selling products to include seasonal or limited-time flavors. For instance, introducing a holiday-inspired espresso or chai tea might attract additional interest during peak periods. Promoting these items through customer loyalty programs or social media can also capitalize on their popularity.</li>
+                <h3>Balanced Location Sales:</h3>
+                <li><strong>Insight: </strong>Sales are evenly distributed across Hell's Kitchen, Astoria, and Lower Manhattan, with each location contributing significantly to overall revenue.</li>
+                <li><strong>Recommendation: </strong>Conduct location-specific marketing campaigns to amplify sales further. For instance, partnering with nearby businesses or hosting events at specific locations could boost foot traffic. Additionally, studying demographic data for each area could unveil targeted promotion opportunities, such as exclusive discounts for local residents or office workers.</li>
+                <h3>Customer Time-of-Day Preferences:</h3>
+                <li><strong>Insight: </strong>Afternoon transactions dominate with 56% of sales, suggesting that customers prefer visiting during these hours.</li>
+                <li><strong>Recommendation: </strong>To boost morning sales, consider offering special morning deals, such as discounted breakfast bundles or coffee-and-pastry combinations. Evening sales could benefit from promotions aimed at customers seeking a relaxed, evening atmosphere, like happy hour discounts on specific beverages or desserts.</li>
+                <h3>Sales Trends Over Time:</h3>
+                <li><strong>Insight: </strong>The sales trend line suggests higher sales on weekends, with notable peaks during specific weeks.</li>
+                <li><strong>Recommendation: </strong>Utilize this trend to plan promotional events or limited-time offers aligned with peak sales periods. By actively promoting events on weekends, Deyoka Coffee Shop can maximize sales potential. Additionally, resource allocation—such as staffing and inventory—can be strategically adjusted to meet these peak demands efficiently.</li>
+                <h3>Product Category Opportunities:</h3>
+                <li><strong>Insight: </strong>While Coffee and Tea are top categories, other items like Drinking Chocolate and Flavored Beverages show steady but lower transaction volumes.</li>
+                <li><strong>Recommendation: </strong>Introduce bundled offers that combine popular items (e.g., espresso) with lower-transaction items (e.g., flavored beverages). This approach may increase awareness and encourage customers to try a broader range of products, helping to diversify sales.</li>
+
+            </ul>
+        </div>
+
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>The Deyoka Coffee Shop sales dashboard offers a detailed snapshot of current business performance, revealing key patterns in product demand, location-based sales, and customer purchasing behaviors. This analysis identifies several areas where targeted actions can drive growth:</p>
+            <ul>
+                <li><strong>Enhance Product Offerings: </strong>Expanding on top-performing products like Barista Espresso and Brewed Chai Tea can satisfy customer preferences and attract new segments. Additionally, limited-time or seasonal products may stimulate interest and increase repeat visits.</li>
+                <li><strong>Optimize Location Strategies: </strong>By tailoring promotions to each location's demographic, Deyoka can deepen its local presence and build customer loyalty. Special events or collaborations can further strengthen community ties and encourage local patronage.</li>
+                <li><strong>Leverage Time-Based Promotions: </strong>Customer preferences for afternoon purchases suggest an opportunity to balance demand throughout the day. Morning and evening promotions, designed to attract different customer groups, could enhance sales consistency.</li>
+                <li><strong>Prepare for Seasonal Peaks: </strong>Monitoring trends allows Deyoka to anticipate peak sales periods and adjust staffing, inventory, and marketing accordingly, ensuring a seamless customer experience during high-traffic times.</li>
+            </ul>
+            <p>Overall, these insights highlight opportunities for strategic decision-making that align with customer preferences, market trends, and operational efficiency. By implementing these recommendations, Deyoka Coffee Shop can continue to thrive, enhancing customer satisfaction and driving sustained revenue growth.</p>
+
+        </div>
+    </article>
+</body>
+</html>
